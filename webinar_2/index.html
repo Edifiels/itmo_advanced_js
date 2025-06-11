@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="/src/style.css" />
+        <title>Интернет-магазин</title>
+    </head>
+    <body>
+        <h1>Интернет-магазин</h1>
+        <div id="message"></div>
+
+        <h2>Добавить товар</h2>
+        <form id="addProductForm">
+            <input
+                type="text"
+                id="productTitle"
+                placeholder="Название товара"
+                required
+            />
+            <input
+                type="number"
+                id="productPrice"
+                placeholder="Цена товара"
+                step="0.01"
+                required
+            />
+            <input
+                type="text"
+                id="productDescription"
+                placeholder="Описание товара"
+                required
+            />
+            <input
+                type="text"
+                id="productImage"
+                placeholder="URL картинки товара"
+                required
+            />
+            <input
+                type="text"
+                id="productCategory"
+                placeholder="Категория"
+                required
+            />
+            <button type="submit">Добавить товар</button>
+        </form>
+
+        <h2>Список товаров</h2>
+
+        <div id="productList"></div>
+
+        <script src="/src/main.js"></script>
+    </body>
+</html>
